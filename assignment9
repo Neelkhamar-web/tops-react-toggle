@@ -1,0 +1,104 @@
+1. What is React Js?
+React.js is a JavaScript library for building user interfaces, primarily for single-page applications.
+
+2. What is NPM in React Js?
+NPM (Node Package Manager) is used to manage and install dependencies for React projects.
+
+3. What is Role of Node Js in React Js?
+Node.js provides a runtime environment for executing JavaScript outside the browser and is used for building and running React development tools.
+
+4. What is CLI command In React Js?
+CLI commands allow you to create and manage React projects. Example:
+
+sh
+Copy code
+npx create-react-app my-app
+5. What is Components in React Js?
+Components are reusable UI elements in React, defined as JavaScript functions or classes.
+
+6. What is Header and Content Components in React Js?
+Header Component: Renders the header section.
+Content Component: Renders the main content area.
+7. How to Install React Js on Windows and Linux Operating Systems?
+Windows:
+Install Node.js (includes NPM) from nodejs.org.
+Create a React app:
+sh
+Copy code
+npx create-react-app my-app
+Check NPM version:
+sh
+Copy code
+npm -v
+Linux:
+Install Node.js and NPM:
+sh
+Copy code
+sudo apt install nodejs npm
+Create a React app:
+sh
+Copy code
+npx create-react-app my-app
+Check NPM version:
+sh
+Copy code
+npm -v
+8. How to Check Version of React Js?
+sh
+Copy code
+npm list react
+9. How to Change in Components of React Js?
+Example: Modify Header component.
+
+jsx
+Copy code
+import React from 'react';
+
+function Header() {
+  return (
+    <header>
+      <h1>My New Header</h1>
+    </header>
+  );
+}
+
+export default Header;
+10. How to Create a List View in React Js?
+Example: Create a list view component.
+
+jsx
+Copy code
+import React from 'react';
+
+const ListView = ({ items }) => {
+  return (
+    <ul>
+      {items.map((item, index) => (
+        <li key={index}>{item}</li>
+      ))}
+    </ul>
+  );
+};
+
+export default ListView;
+11. Create Increment Decrement State Change by Button Click
+Example: Create a counter component.
+
+jsx
+Copy code
+import React, { useState } from 'react';
+
+const Counter = () => {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <button onClick={() => setCount(count - 1)}>Decrement</button>
+    </div>
+  );
+};
+
+export default Counter;
+Complete these tasks to gain a fundamental understanding of React.js and its basic functionalities.
